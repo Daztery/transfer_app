@@ -2,11 +2,14 @@
 
     <style name="Base.Theme.TransferApp" parent="Theme.Material3.DayNight.NoActionBar" />
 
-    <style name="TransferApp" parent="Base.Theme.TransferApp">
+    <style name="Theme.TransferApp" parent="Base.Theme.TransferApp">
         <item name="colorPrimary">@color/green</item>
     </style>
 
-    <style name="SplashTheme" parent="TransferApp">
-        <item name="android:windowBackground">@drawable/splashscreen</item>
+    <style name="Theme.SplashTheme" parent="Theme.TransferApp">
+        <item name="windowSplashScreenBackground">@color/orange</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.TransferApp</item>
     </style>
 </resources>

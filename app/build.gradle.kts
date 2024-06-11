@@ -58,6 +58,8 @@ dependencies {
     // ViewModel
     implementation(libs.viewmodel)
 
+    // Splash
+    implementation (libs.androidx.core.splashscreen)
 
 }
 
