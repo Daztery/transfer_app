@@ -18,7 +18,7 @@ class PaymentsAdapter(
 
     override fun onBindViewHolder(holder: PaymentsViewHolder, position: Int) {
         val item = paymentsList[position]
-        holder.render(item)
+        holder.bind(item)
     }
 
 }
